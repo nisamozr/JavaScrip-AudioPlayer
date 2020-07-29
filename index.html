@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
@@ -31,27 +32,28 @@
                 00:00
                 <span></span>
                 00:00
+                
             </div>
             <!-- seekbar --> 
             <div class="seek">
                 <div class="fil">
-                    
+
                 </div>
             </div>
             <!-- seekbar -->
             <div class="audio-btns">
                 <div class="play-btns">
-                    <a href="#"><i class="fa fa-backward"></i></a>
-                    <a href="#" class="play-pause"><i class="fa fa-play"></i></a>
-                    <a href="#"><i class="fa fa-forward"></i></a>
+                    <a href="#"onclick="preAudio()"><i class="fa fa-backward"></i></a>
+                    <a href="#" class="play-pause" onclick="togglePlayPause()"><i class="fa fa-play"></i></a>
+                    <a href="#" onclick="nextAudio()"><i class="fa fa-forward"></i></a>
                     
                 </div>
                 <div class="reapeat-btns">
                     <a href="#"><i class="fa fa-retweet"></i></a>
                     <span>
-                        <button class="decrease">-</button>
-                        <a href="#" class="volume-up"><i class="fa fa-volume-up" ></i></a>
-                        <button class="increase">+</button>
+                        <button class="decrease" onclick="volumeDown()">-</button>
+                        <a href="#" class="volume-up" onclick="mute()" ><i class="fa fa-volume-up" ></i></a>
+                        <button class="increase" onclick="volumeUp()">+</button>
 
                     </span>
                     <a href="#" ><i class="fa fa-random"></i></a>
@@ -60,8 +62,9 @@
         </div>
     </div>
 
-
+    "<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+
 
     
 </body>
